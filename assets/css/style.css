@@ -12,3 +12,41 @@
         display:  none;
     }
 }
+
+.hero {
+    background-color: #f5f6f7  ;
+    min-height: 450px; /*Autoajuste para pantallas pequeñas*/
+    text-align: center;
+
+}
+
+/*Estilos Generales*/
+
+section{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+h1 {
+    font-size: 2.5rem; /*2.5 veces el elemento raiz*/
+    font-family: 'Rubik Dirt', cursive; /*Letra de Google*/
+}
+.hero-principal {
+    padding:  3rem;
+
+}
+
+.imagen-desarrolador {
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+    
+    }
+.hero-principal h2 { /*Establezco el formato de H2 en la seccion principal hero*/
+font: 1.5 rem;
+color: #7b1c1c
+}
