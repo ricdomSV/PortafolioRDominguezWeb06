@@ -82,16 +82,52 @@ color: #7b1c1c
 }
 
  .experiencia {
-    padding: 40px;
+    padding: 40px 40px 60px 40px;
 
  }
 
- .experiencia .row div { /*Todos los divs dentro de una fila y dentro de la seccion experiencia*/
+  .experiencia i {
+    font-size: 2.5rem; /* ersonalizacion del icono experiencia laptop*/
+    color: chartreuse  ;
+    background-color: black;
+    padding: 8px 19px;
+    border-radius: 50%;
+ }
+
+ .experiencia .columna {
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flez;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* 
+
+ .experiencia .row div { Formato a todos los divs dentro de una fila y dentro de la seccion experiencia
     height: 250px;
     background-color: purple;
     border: 3px solid orangered;
  }
 
+ */
+ .experiencia-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0,
+ }
+
+ .badges-contenedor {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0,
+
+ }
+
+ .badge {
+    margin: 5px;
+ }
 
 @media screen and (min-width: 700px) { /*Establezco el ancho maximo para pantallas pequeñas*/
     .hero-inferior-imagen {
