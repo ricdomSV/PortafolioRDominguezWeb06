@@ -33,10 +33,7 @@ justify-content: center;
 
     color: black;
     background-color: white;
-
-
 }
-
 
 .seccion-titulo {
 font-size: 2rem;
@@ -44,9 +41,24 @@ padding: 15px 0;
 font-family: 'Rubik Dirt', cursive;
 }
 
+.seccion-descripcion {
+font-size: 1.2rem ;
+color: #584e4e;
+
+}
+
 .seccion-texto { /*Fromato del texro de la seccion sobre mi*/
     font-size: 1.2rem;
 }
+
+.texto-negro {
+    color: black;
+}
+
+.texto-blanco {
+    color:white
+}
+
 
 h1 {
     font-size: 2.5rem; /*2.5 veces el elemento raiz*/
@@ -87,21 +99,27 @@ color: #7b1c1c
  }
 
   .experiencia i {
-    font-size: 2.5rem; /* ersonalizacion del icono experiencia laptop*/
+    font-size: 2.5rem; /* Personalizacion del icono experiencia laptop*/
     color: chartreuse  ;
     background-color: black;
     padding: 8px 19px;
     border-radius: 50%;
  }
 
- .experiencia .columna {
+ .experiencia .columna { /* Formateo de la seccion experiencia con sus respectivas columnas*/
     padding: 20px;
     border: 2px solid #8080804d;
     display: flez;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    transition: all 0.2s ease-in; /* Efecto de transicion al pasar el mouse*/
 }
+
+.experiencia .columna:hover {
+    color: white;
+    background-color: #1b1b32;
+  }
 
 /* 
 
@@ -127,6 +145,13 @@ color: #7b1c1c
 
  .badge {
     margin: 5px;
+ }
+
+ 
+ /*Proyectos*/
+
+ .proyectos-recientes {
+    padding: 40px;
  }
 
 @media screen and (min-width: 700px) { /*Establezco el ancho maximo para pantallas pequeñas*/
