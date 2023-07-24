@@ -1,294 +1,397 @@
+/* Barra de navegacion */
+
 .navbar {
-    padding: 2rem ;
+    padding: 2rem;
     background-color: #f5f6f7;
-}
-.navbar-collapse {
+  }
+  
+  .navbar-collapse {
     align-items: center;
-    justify-content: space-between;
-}
-
-.hero {
-    background-color: #f5f6f7  ;
-    min-height: 450px; /*Autoajuste para pantallas pequeñas*/
-    text-align: center;
-
-}
-
-/*Estilos Generales*/
-
-.btn-info {
-    font-size: 1.1 rem;
-    margin: 20 px;
-}
-
-.section {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-}
-
-.seccion-oscura { /*Color de la sección acerca de mi*/
+    justify-content: space-between;  
+  }
+  
+  /* Estilos generales */
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem; /*2.5 veces el elemento raiz*/
+    font-family: 'Rubik Dirt', cursive;
+  }
+  
+  .seccion-oscura { /*Color de la sección acerca de mi*/
     color: white;
-    background-color: black;
-
-}
-
-.seccion-clara {
-
+    background-color: #1b1b32;
+  }
+  
+  .seccion-clara {
     color: black;
     background-color: white;
-}
-
-.seccion-titulo {
-font-size: 2rem;
-padding: 15px 0;
-font-family: 'Rubik Dirt', cursive;
-
-}
-
-.seccion-descripcion { /*Cada seccion va a tener una descipcion especifica*/
-font-size: 1.2rem ;
-color: #584e4e;
-
-}
-
-.seccion-texto { /*Fromato del texto de la seccion sobre mi*/
+  }
+  
+  .seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Rubik Dirt', cursive;
+  }
+  
+  .seccion-descripcion { /*Cada seccion va a tener una descipcion especifica*/
     font-size: 1.2rem;
-}
-
-.texto-negro {
+    color: #584e4e;
+  }
+  
+  .seccion-texto {  /*Fromato del texto de la seccion sobre mi*/
+    font-size: 1.2rem;
+  }
+  
+  .btn-info {
+    font-size: 1.1rem;
+    margin: 20px;
+  }
+  
+  .texto-negro {
     color: black;
-}
-
-.texto-blanco {
-    color:white
-}
-
-
-h1 {
-    font-size: 2.5rem; /*2.5 veces el elemento raiz*/
-     /*Letra de Google*/
-}
-.hero-principal {
-    padding:  3rem;
-
-}
-
-.imagen-desarrolador {
-
+  }
+  
+  .texto-blanco {
+    color: white;
+  }
+  
+  /* Seccion Hero */
+  
+  .hero {
+    background-color: #f5f6f7;
+    min-height: 450px; /*Autoajuste para pantallas pequeñas*/
+    text-align: center;
+  }
+  
+  .hero-principal {
+    padding: 3rem;
+  }
+  
+  .hero-imagen-desarrollador {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
     margin: 20px;
-    
-    }
-
-.hero-principal h2 { /*Establezco el formato de H2 en la seccion principal hero*/
-font: 1.5 rem;
-color: #7b1c1c
-}
-
-.sobre-mi {
+  }
+  
+  .hero-principal h2 { /*Establezco el formato de H2 en la seccion principal hero*/
+    font-size: 1.5rem;
+    color: #615151;
+  }
+  
+  /* Sobre mi */
+  
+  .sobre-mi {
     height: 500px;
-    padding: 10px,;
-
-}
-
-.sobre-mi .contenedor {  /*Aplico formato a dos clases parte de la misma division*/
- max-width: 600px;
- text-align: center;
-}
-
- .experiencia {
+    padding: 10px;
+  }
+  
+  .sobre-mi .contenedor {  /*Aplico formato a dos clases parte de la misma division*/
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  /* Experiencia */
+  
+  .experiencia {
     padding: 40px 40px 60px 40px;
-
- }
-
-  .experiencia i {
-    font-size: 2.5rem; /* Personalizacion del icono experiencia laptop*/
-    color: chartreuse  ;
-    background-color: black;
-    padding: 8px 19px;
-    border-radius: 50%;
- }
-
- .experiencia .columna { /* Formateo de la seccion experiencia con sus respectivas columnas*/
+  }
+  
+  .experiencia .columna { /* Formateo de la seccion experiencia con sus respectivas columnas*/
     padding: 20px;
     border: 2px solid #8080804d;
-    display: flez;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     transition: all 0.2s ease-in; /* Efecto de transicion al pasar el mouse*/
-}
-
-.experiencia .columna:hover {
+  }
+  
+  .experiencia .columna:hover {
     color: white;
     background-color: #1b1b32;
   }
-
- .experiencia-titulo {
+  
+  .experiencia i {
+    font-size: 2.5rem; /* Personalizacion del icono experiencia laptop*/
+    color: #7ade30;
+    background-color: #0a0a23;
+    padding: 8px 19px;
+    border-radius: 50%;
+  }
+  
+  .experiencia-titulo {
     font-size: 25px;
     font-weight: bold;
-    margin: 10px 0,
- }
-
- .badges-contenedor {
+    margin: 10px 0;
+  }
+  
+  .badges-contenedor {
     font-size: 20px;
     font-weight: bold;
-    margin: 10px 0,
-
- }
-
- .badge {
+    margin: 10px 0;
+  }
+  
+  .badge {
     margin: 5px;
- }
-
- 
- /*Proyectos*/
-
- .proyectos-recientes {
+  }
+  
+  /* Proyectos */
+  
+  .proyectos-recientes {
     padding: 40px;
- }
-
- .proyectos-recientes img {  /*Formato de todas las imafenes que esten dentro de la seccion proyectos-recientes*/
+  }
+  
+  .proyectos-recientes img { /*Formato de todas las imafenes que esten dentro de la seccion proyectos-recientes*/
     height: 100%;
     width: 100%;
     padding: 10px;
     border-radius: 10px;
     display: block;
     transition: all 0.2s ease;
- }
-
- .proyectos-contenedor { /*Estilo del contenedor de los proyectos*/
+  }
+  
+  .proyectos-contenedor { /*Estilo del contenedor de los proyectos*/
     padding-top: 60px;
     margin-bottom: 40px;
-}
-
-.overlay {   /*Formato del texto sobre las imagenes de la seccion galeria de proyectos*/
-    transition: all0.2s ease;
-    opacity: 0 ;
+  }
+  
+  .overlay { /*Formato del texto sobre las imagenes de la seccion galeria de proyectos*/
+    transition: all 0.2s ease;
+    opacity: 0;
     position: absolute;
-    top: 50% ;
-    left: 50% ;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-}
-
-.overlay p { /*Formato de los parrafos dentro del overlay*/
+  }
+  
+  .overlay p { /*Formato de los parrafos dentro del overlay*/
     font-size: 25px;
     font-weight: bold;
     margin-bottom: 0;
-
-}
-
-
-.proyecto{  /*Cuando el cursor esta sobre la imagen se muestra el texto de la etioqueta P >*/
-    position: relative ;
-}
-
-.proyecto:hover img { /*Cuando el cursor se posicione sobre la imagen va a cambiar su opacidad a 0.2*/
-    opacity: 0.2 ;
-}
-
-.proyecto:hover .overlay { /*Cuando el cursor este sobre el elemento proyecto se le va asignar el estilo al overlay dentro de proyecto*/
+  }
+  
+  .proyecto { /*Cuando el cursor esta sobre la imagen se muestra el texto de la etioqueta P >*/
+    position: relative;
+  }
+  
+  .proyecto:hover img {  /*Cuando el cursor se posicione sobre la imagen va a cambiar su opacidad a 0.2*/
+    opacity: 0.2;
+  }
+  
+  .proyecto:hover .overlay { /*Cuando el cursor este sobre el elemento proyecto se le va asignar el estilo al overlay dentro de proyecto*/
     opacity: 1;
-
-}
-
-.overlay .iconos-contenedor { /* Que los iconos se muestren solo en una fila */
+  }
+  
+  .overlay .iconos-contenedor { /* Que los iconos se muestren solo en una fila */
     display: flex;
-
-}
-
-.overlay i {
+  }
+  
+  .overlay i {
     color: black;
     font-size: 60px;
     margin: 10px;
-}
-
-/*Testimonios*/
-
-.testimonios {  /*Padding de la seccion testimonios*/
+  }
+    
+  /* Testimonios */
+  
+  .testimonios { /*Padding de la seccion testimonios*/
     padding: 40px 40px 80px 40px;
-}
-
-.testimonios .carousel {
-    max-width: 800px;   /* Establezco el tamaño de los slides en el carrousel */
-}
-
-.carousel-item {
+  }
+  
+  .testimonios .carousel {
+    max-width: 800px; /* Establezco el tamaño de los slides en el carrousel */
+  }
+  
+  .carousel-item {
     height: 500px;
-}
-
-.carousel-item .container {
+  }
+  
+  .carousel-item .container {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.testimonio-imagen {
+  }
+  
+  .testimonio-imagen {
     height: 150px;
     width: 150px;
     margin: 10px 10px 20px 10px;
-    
-
   }
-
-
-.testimonio-texto {
+  
+  .testimonio-texto {
     max-width: 70%;
     font-size: 20px;
-    
-}
-
-.testimonio-info {
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+  }
+  
+  .testimonio-info {
     font-weight: bold;
     text-align: center;
-}
-
-.testimonio-info p {
+  }
+  
+  .testimonio-info p {
     margin-bottom: 0;
-
-}
-
-.testimonio-footer .cliente {
+  }
+  
+  .testimonio-footer .cliente {
     font-size: 1.2rem;
-}
-
-.testimonio-info .cargo {
-    font-size: 0.9 rem;
+  }
+  
+  .testimonio-info .cargo {
+    font-size: 0.9rem;
     color: #656060;
-}
-
-/*Seccion para la responsividad*/
-
-@media screen and (min-width: 400px) {
+  }
+  
+  /* Contacto */
+  
+  .contacto .container {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+  }
+  
+  .contacto .rectangulo {
+    margin-top: -5rem;  /* Hago que se traslape entre una seccion y otra */
+    background-color: rgb(13, 110, 253);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white;
+  }
+  
+  .contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contacto .descripcion {
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .contacto button { /* Aplicamos a la clase contacto y despues a todos los de la clase de tipo boton */
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out; /* Efecto cuando el usuario pongo el cursor sobre el boton */
+  }
+  
+  .contacto button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .contacto button i { /* Formato al icono que esta dentro de la clase boton */
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .contacto button:hover i {
+    color: black;
+  }
+  
+  /* Pie de pagina (footer) */
+  
+  footer {
+    min-height: 500px;
+  }
+  
+  .footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+  }
+  
+  .footer-texto {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+  }
+  
+  .iconos-redes-sociales i {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+  }
+  
+  .iconos-redes-sociales a:hover {
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+  }
+  
+  .iconos-redes-sociales a:hover i {
+    color: black;
+  }
+  
+  .derechos-de-autor {
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+  }
+  
+  /* Adaptable (Responsivo) */
+  
+  @media screen and (max-width: 400px) {
     .overlay p {
-        font-size: 18px;
+      font-size: 18px;
     }
-
+  
     .overlay i {
-        font-size: 40px;
+      font-size: 40px;
     }
-}
-
-
-
-@media screen and (min-width: 700px) { /*Establezco el ancho maximo para pantallas pequeñas*/
-    .hero-inferior-imagen {
-        max-width: 600px;
-    }
-}
-
-@media screen and (max-width: 767px) {
+  }
+  
+  @media screen and (max-width: 767px) {
     .navbar-brand {
-        display:  none;
+      display: none;
     }
-}
-
+  }
+  
+  @media screen and (max-width: 800px) {
+    .testimonio-imagen {
+      height: 120px;
+      width: 120px;
+    }
+  
+    .testimonio-texto {
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (min-width: 700px) {
+    .hero-inferior-imagen {
+      max-width: 600px;
+    }
+  }
+  
 
