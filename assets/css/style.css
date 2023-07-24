@@ -21,7 +21,7 @@
     margin: 20 px;
 }
 
-section{
+.section {
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -44,6 +44,7 @@ justify-content: center;
 font-size: 2rem;
 padding: 15px 0;
 font-family: 'Rubik Dirt', cursive;
+
 }
 
 .seccion-descripcion { /*Cada seccion va a tener una descipcion especifica*/
@@ -82,6 +83,7 @@ h1 {
     margin: 20px;
     
     }
+
 .hero-principal h2 { /*Establezco el formato de H2 en la seccion principal hero*/
 font: 1.5 rem;
 color: #7b1c1c
@@ -126,15 +128,6 @@ color: #7b1c1c
     background-color: #1b1b32;
   }
 
-/* 
-
- .experiencia .row div { Formato a todos los divs dentro de una fila y dentro de la seccion experiencia
-    height: 250px;
-    background-color: purple;
-    border: 3px solid orangered;
- }
-
- */
  .experiencia-titulo {
     font-size: 25px;
     font-weight: bold;
@@ -271,8 +264,9 @@ color: #7b1c1c
     font-size: 0.9 rem;
     color: #656060;
 }
-*/
+
 /*Seccion para la responsividad*/
+
 @media screen and (min-width: 400px) {
     .overlay p {
         font-size: 18px;
